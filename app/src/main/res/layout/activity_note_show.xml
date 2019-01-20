@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帖子"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="3dp"
+        android:elevation="1dp">
+        <TextView
+            android:id="@+id/main_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大家如何看待此次互联网+在西电举行"
+            android:textColor="@color/colorNotBlack"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/main_image"
+            android:layout_toEndOf="@+id/main_image" />
+
+        <TextView
+            android:id="@+id/main_tv2"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="李书记"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/rect_blue"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/main_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="众所周知，互联网+是教育部开办的大型创新创业活动，是国家高度重视的项目,如此重要的比赛在西电开展，大家有什么想说的"
+            android:textColor="@color/colorBetween"
+            android:textSize="14sp"
+            android:layout_below="@+id/main_tv3"
+            android:layout_alignLeft="@+id/main_tv3"
+            android:layout_alignStart="@+id/main_tv3"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="1dp"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="黝黑蜗壳"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/rect_primary"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:text="在我电举办是实力的象征好伐。。。顶一个！"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="2dp"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/namee"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="香草奶昔"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/rect_pink"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namee"
+            android:text="从我个人的角度来说，我认为，西电获得互联网+大赛的举办权，是国家对我们西电在互联网时代实力的认可，说明我们学校在新时代占据了潮头的地位。我为身为西电人而自豪。"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="2dp"
+        android:visibility="gone"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/nameee"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="香草奶昔"
+            android:textColor="@color/colorWhite"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/rect_blue"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameee"
+            android:text="从我个人的角度来说，我认为，西电获得互联网+大赛的举办权，是国家对我们西电在互联网时代实力的认可，说明我们学校在新时代占据了潮头的地位。我为身为西电人而自豪。"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <EditText
+            android:id="@+id/edit_note"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="4"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:id="@+id/button_note"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:text="发送"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+
+
+</LinearLayout>

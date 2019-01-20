@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:elevation="1dp">
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/basketball"
+        />
+
+
+    <TextView
+            android:id="@+id/main_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地点:西电北操篮球场"
+            android:textColor="@color/colorNotBlack"
+            android:textSize="13sp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/main_tv3"
+            android:layout_alignLeft="@+id/main_tv3" />
+
+        <TextView
+            android:id="@+id/main_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017年4月20日"
+            android:textColor="@color/colorBrown"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/main_tv4"
+            android:layout_alignLeft="@+id/main_tv4" />
+
+    <TextView
+        android:id="@+id/main_tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17:00——22:00"
+        android:textColor="@color/colorBrown"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/main_tv4"
+        android:layout_toRightOf="@+id/main_tv5"
+        android:layout_toEndOf="@+id/main_tv5" />
+
+
+    <TextView
+        android:id="@+id/main_tv2"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:text="香草奶昔"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:background="@drawable/rect_blue"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/main_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一起来打篮球"
+        android:textColor="@color/colorNotBlack"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/main_image"
+        android:layout_toEndOf="@+id/main_image" />
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动管理"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:onClick="selectCreatedAcs">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发起的活动"
+            android:textSize="16sp"
+            android:textColor="@color/colorNotBlack"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView9" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:onClick="selectJoinedAcs">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参加的活动"
+            android:textSize="16sp"
+            android:textColor="@color/colorNotBlack"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView8" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:onClick="selectAttendedAcs">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注的活动"
+            android:textSize="16sp"
+            android:textColor="@color/colorNotBlack"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.butterfly.poly.personUI.SetNameActivity"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:onClick="setNameSure"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/edit_set_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#f6f2f2"
+        android:inputType="textMultiLine"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:backgroundTint="@color/colorWhite"
+        />
+
+
+
+</LinearLayout>

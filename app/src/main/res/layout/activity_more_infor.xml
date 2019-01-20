@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.splashUI.personUI.MoreInforActivity"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细资料"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:onClick="setPhone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话"
+            android:textSize="16sp"
+            android:textColor="@color/colorNotBlack"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/colorBrown"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:onClick="setAddress">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址"
+            android:textSize="16sp"
+            android:textColor="@color/colorNotBlack"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/colorBrown"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        android:onClick="setSignature">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个性签名"
+            android:textSize="16sp"
+            android:textColor="@color/colorNotBlack"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/tv_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/colorBrown"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/arrow"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

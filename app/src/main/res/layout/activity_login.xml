@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="35dp"
+    android:paddingRight="35dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.splashUI.signuplogin.SignupActivity"
+    android:background="@color/colorWhite"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/tv_send_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:layout_below="@id/edit_confirm_code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="验证码已发送到你的手机！"
+        android:visibility="gone"/>
+
+
+    <EditText
+        android:id="@+id/edit_passwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textCursorDrawable="@null"
+        android:hint="密码"
+        android:textSize="16sp"
+        android:drawablePadding="5dp"
+        android:textColor="@color/colorPrimary"
+        android:password="true"
+        android:layout_below="@+id/edit_username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@+id/edit_passwd"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/edit_passwd"
+        android:text="忘记密码？"
+        android:id="@+id/tv_forget_passwd" />
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:text="注册"
+        android:onClick="signUp"
+        android:layout_alignBaseline="@+id/tv_forget_passwd"
+        android:layout_alignBottom="@+id/tv_forget_passwd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/signup_image"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/login_image2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textCursorDrawable="@null"
+        android:hint="手机号"
+        android:drawablePadding="5dp"
+        android:textSize="16sp"
+        android:inputType="phone"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/signup_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/ensure_login"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_get_code_background"
+        android:layout_marginTop="78dp"
+        android:textSize="17sp"
+        android:text="确认登录"
+        android:textColor="@color/colorPrimary"
+        android:onClick="login"
+        android:layout_below="@+id/tv_forget_passwd"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

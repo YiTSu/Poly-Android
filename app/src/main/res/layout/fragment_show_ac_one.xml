@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/total_ac_back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <!--<ImageView-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:src="@drawable/heart"-->
+            <!--android:layout_margin="21dp"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="18dp"-->
+            <!--android:layout_height="18dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:src="@drawable/heart_full"-->
+            <!--android:layout_margin="21dp"-->
+            <!--android:visibility="gone"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/love"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--style="?android:attr/borderlessButtonStyle"-->
+            <!--android:onClick="loveActivity"/>-->
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="exitActivity"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="主题"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:textColor="@color/colorNotBlack"
+            android:text="活动:一起来打篮球吧"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

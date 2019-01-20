@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yitsu.poly">
+
+    <!-- 权限获取 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".controller.application.Poly"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="聚以嬉"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.splashUI.SplashActivity"
+            android:theme="@style/FullScreenAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.splashUI.signuplogin.LoginActivity" />
+        <activity android:name=".view.splashUI.signuplogin.SignupActivity" />
+        <activity android:name=".view.splashUI.settingsUI.ContentActivity" />
+        <activity android:name=".view.splashUI.personUI.MoreInforActivity" />
+        <activity android:name=".view.splashUI.settingsUI.NotificationsActivity" />
+        <activity android:name=".view.splashUI.settingsUI.UnDisturbActivity" />
+        <activity android:name=".view.splashUI.settingsUI.ChatActivity" />
+        <activity android:name=".view.splashUI.settingsUI.AcsRangeActivity" />
+        <activity android:name=".view.splashUI.settingsUI.SafetyActivity" />
+        <activity
+            android:name=".view.splashUI.creatAcUI.ActivitiesActivity"
+            android:theme="@style/MyPopWindowStyle" />
+        <activity
+            android:name=".view.splashUI.showAcUI.ShowAcsActivity"
+            android:theme="@style/MyPopWindowStyle" />
+        <activity
+            android:name=".view.splashUI.createNoteUI.CreateNoteActivity"
+            android:theme="@style/MyPopWindowStyle" />
+        <activity android:name=".view.splashUI.controlAcsUI.SelectJoinedAcsActivity" />
+        <activity android:name=".view.splashUI.controlAcsUI.SelectAttendedAcsActivity" />
+        <activity android:name=".view.splashUI.controlAcsUI.SelectCreatedAcsActivity" />
+        <activity android:name=".view.splashUI.mainUI.MainActivity" />
+        <activity android:name=".view.splashUI.personUI.SetNameActivity" />
+        <activity android:name=".view.splashUI.personUI.SetSexActivity" />
+        <activity android:name=".view.splashUI.personUI.SetHobbyActivity" />
+        <activity android:name=".view.splashUI.personUI.SetPhoneActivity" />
+        <activity android:name=".view.splashUI.personUI.SetAddressActivity" />
+        <activity android:name=".view.splashUI.personUI.SetSignatureActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".view.splashUI.settingsUI.ChangePassWdActivity" />
+        <activity android:name=".view.splashUI.signuplogin.ForgetPasswdActivity" />
+        <activity
+            android:name=".view.splashUI.guideUI.GuideActivity"
+            android:theme="@style/FullScreenAppTheme" />
+        <activity android:name=".NoteShowActivity"></activity>
+    </application>
+
+</manifest>

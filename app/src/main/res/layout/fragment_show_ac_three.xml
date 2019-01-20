@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/total_ac_back_o">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/im_heart"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/heart"
+            android:layout_margin="21dp"/>
+
+        <ImageView
+            android:id="@+id/im_heart_full"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/heart_full"
+            android:layout_margin="21dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bt_love"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="loveActivity"/>
+
+        <Button
+            android:id="@+id/bt_unlove"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="unLoveActivity"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="exitActivity"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动详细"
+                android:textSize="16sp"
+                android:textColor="@color/colorNotBlack"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:text="本次活动......."
+            android:gravity="left"
+            android:textColor="@color/colorNotBlack"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
